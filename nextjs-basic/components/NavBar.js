@@ -6,20 +6,16 @@ export default function NavBar() {
     return (
         <nav>
             <Link href="/">
-                <a className={router.pathname === "/" ? "active" : ""}>Home</a>
+                <a className={router.pathname === "/" ? "active" : "black"}>Home</a>
             </Link>
             <Link href="/about">
-                <a className={router.pathname === "/about" ? "active" : ""}>About</a>
+                <a className={router.pathname === "/about" ? "active" : "black"}>About</a>
             </Link >
             <style jsx>{`
                 nav{
-                    background-color: tomato;
                 }
                 a{
                     text-decoration: none;
-                }
-                .active{
-                    color: yellow;
                 }
             `}</style>
         </nav >
