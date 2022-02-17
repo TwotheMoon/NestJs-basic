@@ -8,10 +8,13 @@ export default function NavBar() {
     return (
         <nav>
             <Link href="/">
-                <a className={router.pathname === "/" ? styles.active : ""}>Home</a>
+                <a className={`${styles.link} ${router.pathname === "/" ? styles.active : ""
+                    }`}>Home</a>
             </Link>
             <Link href="/about">
-                <a className={router.pathname === "/about" ? styles.active : ""}>About</a>
+                <a className={[
+                    styles.link,
+                    router.pathname === "/about" ? styles.active : ""].join(" ")}>About</a>
             </Link >
         </nav >
     );
