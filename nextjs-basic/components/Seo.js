@@ -1,5 +1,9 @@
+import Head from "next/head";
+
 export default function Seo({ title }) {
     return (
-        <title>{title} | Next Movies</title>
+        <Head>
+            <title>{title} | Next Movies</title>
+        </Head>
     );
 }
